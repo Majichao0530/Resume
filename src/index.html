@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+    </style>
+    <style>
+      article {
+        padding-top: 20px;
+      }
+      p {
+        margin: 0.3em;
+      }
+      ul,
+      ol{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      a{
+          color: #999;
+          text-decoration: none;
+          border-bottom: 1px solid;
+      }
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+      .bio {
+        position: relative;
+      }
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 5px;
+      }
+      .projects p{
+          color: #666;
+      }
+      .projects strong{
+          color: #f60
+      }
+      .projects > ol {
+        padding: 0;
+        margin-top: 0;
+      }
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+      .openSource header{
+          display: flex;
+          justify-content: space-between;
+      }
+      .openSource > ol > li {
+        margin-bottom: 24px;
+      }
+    </style>
+    <style>
+        .skills > .wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills > .wrapper :first-child{
+            margin-right: 24px;
+        }
+        .skills > .wrapper > ul > li {
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+    </style>
+    <style>
+        @media(max-width: 500px){
+            body{
+                margin: 0;
+            }
+            article{
+                width: auto;
+                height: auto;
+            }
+            .bio img{
+                display: none;
+            }
+            .skills #skillMap{
+                display: none;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>马继超</h1>
+        <img src="./images/xjpic.jpg" alt="" width="75" height="100" />
+        <p>
+          男 | 30 岁 | 前端开发工程师 | 北京
+        </p>
+        <p>
+          手机：15510631996 | 微信：m15510631996 |
+          邮箱：majichao0530@outlook.com
+        </p>
+      </section>
+      <section class="education">
+        <h2>
+          教育经历
+        </h2>
+        <p>
+          <span><time>2014年</time>~<time>2018年</time></span
+          > 北京工业大学 樊恭烋荣誉学院 本科
+        </p>
+        <p>
+          <span><time>2018年</time>~<time>2021年</time></span
+          > 北京工业大学 工业大数据应用技术国家工程实验室 硕士
+        </p>
+      </section>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>项目1</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于<strong>vue</strong>的项目
+            </p>
+            <p>
+              主要组件有。。。
+            </p>
+            <p>
+              项目过程中有。。。的认识
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>web记账应用</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于React和TypeScript的项目
+            </p>
+            <p>
+              从我自己的需求出发，设计出的极简风格的web记账应用
+              <p>
+              特点是可以快速记账，而且可以通过图表查看自己的消费习惯
+              </p>
+            </p>
+            <p>
+              项目过程中大量使用<strong>React Hooks</strong>，让我对Hooks有了深刻的理解和应用
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>项目1</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于<strong>vue</strong>的项目
+            </p>
+            <p>
+              主要组件有。。。
+            </p>
+            <p>
+              项目过程中有。。。的认识
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+            <div id="skillMap" style="width: 600px;height: 300px;"></div>
+            <ul>
+              <li>掌握HTML(5)、CSS(3)、JS和HTTP协议，熟悉页面架构和布局，熟悉HTML5和CSS3等常用技术</li>
+              <li>熟悉Vue全家桶，包括VueCli、VueRouter和Vuex</li>
+              <li>熟悉ES6语法，包括let/const/promise/解构赋值等</li>
+              <li>熟悉Git，能使用常用Git命令</li>
+              <li>熟悉NodeJS，熟练使用Webpack、Gulp等工具</li>
+              <li>了解Typescript，曾用TS实现过小项目</li>
+              <li>了解浏览器调试工具，包括Vue.js devtools</li>
+              <li>了解服务端语言python，能使用python基本操作</li>
+              <li>
+                了解前后端分离技术，包括AJAX、跨域、前端路由、Cookie、Session等
+              </li>
+            </ul>
+        </div>
+      </section>
+      <section class="openSource" style="page-break-before: always; margin-top: 20px;">
+        <h2>开源项目</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>个人封装DOM库</h3>
+                <span>
+                    <a href="#">项目预览</a>
+                    <a href="#">源码链接</a>
+                </span>
+            </header>
+            <p>
+              封装的DOM库实现了元素选择、事件委托、滑动手势等常见功能
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>CSS3</h3>
+              <span>
+                <a href="#">项目预览</a>
+                <a href="#">源码链接</a>
+            </span>
+            </header>
+            <p>
+              封装的DOM库实现了元素选择、事件委托、滑动手势等常见功能
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>Canvas</h3>
+              <span>
+                <a href="#">项目预览</a>
+                <a href="#">源码链接</a>
+            </span>
+            </header>
+            <p>
+              封装的DOM库实现了元素选择、事件委托、滑动手势等常见功能
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Majichao0530">我的Github</a>
+            过去三个月有11次提交
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="https://cdn.bootcss.com/echarts/4.7.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
